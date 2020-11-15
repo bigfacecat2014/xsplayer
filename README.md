@@ -1,2 +1,2 @@
 # xsplayer
-XianShi Real-Time media player
+XianShi media player
