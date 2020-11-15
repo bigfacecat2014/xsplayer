@@ -1,2 +1,2 @@
 # xsplayer
-XianShi media player
+xs means Xianshi, the name of the author.
