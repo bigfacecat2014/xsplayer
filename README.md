@@ -1,2 +1,2 @@
 # xsplayer
-A free Real-Time media player
+XianShi Real-Time media player
