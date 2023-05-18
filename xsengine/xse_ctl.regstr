@@ -1,0 +1,35 @@
+HKCR
+{
+	ADMLab.XSEngine.1 = s 'XSEngine Control'
+	{
+		CLSID = s '{88888888-1234-5678-9ABC-012301358886}'
+	}
+	ADMLab.XSEngine = s 'XSEngine Control'
+	{
+		CurVer = s 'ADMLab.XSEngine.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {88888888-1234-5678-9ABC-012301358886} = s 'XSEngine Control'
+		{
+			ProgID = s 'ADMLab.XSEngine.1'
+			VersionIndependentProgID = s 'ADMLab.XSEngine'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			ForceRemove 'Control'
+			ForceRemove 'Insertable'
+			ForceRemove 'ToolboxBitmap32' = s '%MODULE%, 101'
+			'MiscStatus' = s '0'
+			{
+			    '1' = s '131473'
+			}
+			'TypeLib' = s '{88888888-1234-5678-9AAB-012301358886}'
+			'Version' = s '1.0'
+
+			val LocalizedString = s '@%MODULE%,-100'
+		}
+	}
+}

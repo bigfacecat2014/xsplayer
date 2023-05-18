@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29102.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{92921DC3-F26C-4225-ACBC-D4CC5523B8EB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "App", "App", "{664617E5-1E30-432C-9F8A-00584A4011CE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xsengine", "xsengine\xsengine64.vcxproj", "{6205CD54-6F42-4F1B-B488-4ACFD7ABEF61}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BaseClasses", "baseclasses\BaseClasses64.vcxproj", "{E8A3F6FA-AE1C-4C8E-A0B6-9C8480324EAA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DSUtil", "DSUtil\DSUtil64.vcxproj", "{FC70988B-1AE5-4381-866D-4F405E28AC42}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xsplayer", "xsplayer\xsplayer64.vcxproj", "{947D2A00-9342-4322-ADA2-A0432965855F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VideoDecorder", "ADMVideoDecoder\VideoDecoder64.vcxproj", "{D29ADED3-086B-46A8-9455-97EFF6B14666}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VideoRenderer", "ADMVideoRenderer\VideoRenderer64.vcxproj", "{682FD7D0-5D0B-46A3-8BCC-62F1EFE63AF2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RtspSource", "RtspSource\RtspSource64.vcxproj", "{6FB45804-EE28-498E-A879-B8EB3D9DDF88}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "live555", "live555\live555_64.vcxproj", "{3BE86A9B-FF7A-4649-9FED-0F553B618A77}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6205CD54-6F42-4F1B-B488-4ACFD7ABEF61}.Release|x64.ActiveCfg = Release|x64
+		{6205CD54-6F42-4F1B-B488-4ACFD7ABEF61}.Release|x64.Build.0 = Release|x64
+		{E8A3F6FA-AE1C-4C8E-A0B6-9C8480324EAA}.Release|x64.ActiveCfg = Release|x64
+		{E8A3F6FA-AE1C-4C8E-A0B6-9C8480324EAA}.Release|x64.Build.0 = Release|x64
+		{FC70988B-1AE5-4381-866D-4F405E28AC42}.Release|x64.ActiveCfg = Release|x64
+		{FC70988B-1AE5-4381-866D-4F405E28AC42}.Release|x64.Build.0 = Release|x64
+		{947D2A00-9342-4322-ADA2-A0432965855F}.Release|x64.ActiveCfg = Release|x64
+		{947D2A00-9342-4322-ADA2-A0432965855F}.Release|x64.Build.0 = Release|x64
+		{D29ADED3-086B-46A8-9455-97EFF6B14666}.Release|x64.ActiveCfg = Release|x64
+		{D29ADED3-086B-46A8-9455-97EFF6B14666}.Release|x64.Build.0 = Release|x64
+		{682FD7D0-5D0B-46A3-8BCC-62F1EFE63AF2}.Release|x64.ActiveCfg = Release|x64
+		{682FD7D0-5D0B-46A3-8BCC-62F1EFE63AF2}.Release|x64.Build.0 = Release|x64
+		{6FB45804-EE28-498E-A879-B8EB3D9DDF88}.Release|x64.ActiveCfg = Release|x64
+		{6FB45804-EE28-498E-A879-B8EB3D9DDF88}.Release|x64.Build.0 = Release|x64
+		{3BE86A9B-FF7A-4649-9FED-0F553B618A77}.Release|x64.ActiveCfg = Release|x64
+		{3BE86A9B-FF7A-4649-9FED-0F553B618A77}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6205CD54-6F42-4F1B-B488-4ACFD7ABEF61} = {92921DC3-F26C-4225-ACBC-D4CC5523B8EB}
+		{E8A3F6FA-AE1C-4C8E-A0B6-9C8480324EAA} = {92921DC3-F26C-4225-ACBC-D4CC5523B8EB}
+		{FC70988B-1AE5-4381-866D-4F405E28AC42} = {92921DC3-F26C-4225-ACBC-D4CC5523B8EB}
+		{947D2A00-9342-4322-ADA2-A0432965855F} = {664617E5-1E30-432C-9F8A-00584A4011CE}
+		{D29ADED3-086B-46A8-9455-97EFF6B14666} = {92921DC3-F26C-4225-ACBC-D4CC5523B8EB}
+		{682FD7D0-5D0B-46A3-8BCC-62F1EFE63AF2} = {92921DC3-F26C-4225-ACBC-D4CC5523B8EB}
+		{6FB45804-EE28-498E-A879-B8EB3D9DDF88} = {92921DC3-F26C-4225-ACBC-D4CC5523B8EB}
+		{3BE86A9B-FF7A-4649-9FED-0F553B618A77} = {92921DC3-F26C-4225-ACBC-D4CC5523B8EB}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {699406CE-E086-41C4-91DB-05A20677F1FF}
+	EndGlobalSection
+EndGlobal

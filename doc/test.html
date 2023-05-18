@@ -1,0 +1,115 @@
+﻿<HTML>
+<HEAD>
+    <TITLE>xsengine test page</TITLE>
+    <meta name="renderer" content="ie-stand">
+</HEAD>
+<BODY scroll="no" style="margin-left: 0%;">
+    <script for="xse_1" event="onEvent(reqId,rspStr)">
+        if (reqId == 0) {
+            if (rspStr == "TFS") {
+                toggleFullscreenState();
+            }
+        }
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            window.viewMode = 1;
+            window.channelCount = 1;
+            window.isPlaying = false;
+            window.isFullScreen = false;
+            document.addEventListener("MSFullscreenChange", function() { 
+                window.isFullScreen = !window.isFullScreen;
+                document.getElementById("btn_fs").innerText = (window.isFullScreen ? "窗口" : "全屏");
+            });
+            udpateView();
+        }
+        function onButtonViewClick(mode) {
+            document.getElementById("xse_1").post("op=view;mode=" + mode); // 1x1视图
+            window.viewMode = mode;
+            window.channelCount = mode * mode;
+            udpateView();
+            restartChannels();
+        }
+
+        function udpateView() {
+            document.getElementById("btn_v1").style.color = (window.viewMode == 1) ? "rgb(128, 0, 255)" : "gray";
+            document.getElementById("btn_v2").style.color = (window.viewMode == 2) ? "rgb(192, 0, 255)" : "gray";
+            document.getElementById("btn_v3").style.color = (window.viewMode == 3) ? "rgb(255, 0, 255)" : "gray";
+            document.getElementById("btn_v4").style.color = (window.viewMode == 4) ? "rgb(255, 0, 128)" : "gray";
+        }
+
+        function onButtonPlayClick() {
+            if (window.isPlaying) {
+                stopAllChannels();
+            }
+            else {
+                startChannels();
+            }
+            window.isPlaying = !window.isPlaying;
+            document.getElementById("btn_play").innerText = (window.isPlaying ? "停止" : "播放");
+            document.getElementById("btn_play").style.color = (window.isPlaying ? "red" : "green");
+        }
+
+        function restartChannels() {
+            if (window.isPlaying) {
+                stopInvisibleChannels();
+                startChannels();
+            }
+        }
+
+        function startChannels() {
+            var xse1 = document.getElementById("xse_1");
+            for (var i = 1; i <= window.channelCount; ++i) {
+                var reqId = xse1.post("op=play;ch=" + i + ";url=rtsp://127.0.0.1:554/ss265.mkv;user_name=admin;password=codemi.net");
+            }
+        }
+
+        function stopInvisibleChannels() {
+            var xse1 = document.getElementById("xse_1");
+                for (var i = 16; i > window.channelCount; --i) {
+                    var reqId = xse1.post("op=stop;ch=" + i);
+                }
+        }
+         
+        function stopAllChannels() {
+            var xse1 = document.getElementById("xse_1");
+            for (var i = 1; i <= 16; ++i) {
+                var reqId = xse1.post("op=stop;ch=" + i);
+            }
+        }
+
+        function toggleFullscreenState() {
+            var xse1 = document.getElementById("xse_1");
+            if (window.screen.width != window.outerWidth) { // 非真全屏状态
+                xse1.post("FS"); // 进入FullScreen状态。
+                document.getElementById("div_player").msRequestFullscreen();
+            }
+            else { // 真全屏状态
+                xse1.post("WS"); // 退出FullScreen状态，还原到Windowed State。
+                document.msExitFullscreen();
+            }
+        }
+    </script>
+    <DIV style="position:absolute;width:100%;height:100%;z-index:10;background:rgba(0, 0, 64, 1.0);" onselectstart="return false">
+        <DIV style="position:absolute;left:0px;top:0px;width:100%;height:8%;pointer-events:none;">
+            <H3 style="position:absolute;left:2px;top:2px;color:black">&emsp;ADM Laboratory</H3>
+            <H3 style="position:absolute;left:0px;top:0px;color:white">&emsp;ADM Laboratory</H3>
+        </DIV>
+        <DIV id="div_bound_box" style="position:relative;left:2%;top:6%;width:96%;height:92%;z-index:20;pointer-events:auto;">
+            <DIV id="div_player" style="position:relative;left:0px;top:0px;width:100%;height:100%;background:rgba(0, 0, 0, 1.0)">
+                <OBJECT id="xse_1" CLASSID="CLSID:88888888-1234-5678-9ABC-018701883361" style="position:absolute;left:0px;top:0px;width:100%;height:100%"></OBJECT>
+                <DIV style="position:relative;left:0%;top:90%;width:100%;height:10%;z-index:30;background:rgba(16, 16, 16, 0.5);pointer-events:none;">
+                    <DIV style="position:absolute;left:12px;top:40%;pointer-events:auto;">
+                        <button style="width:64px;height:32px;font-size:medium;color:green" onclick="onButtonPlayClick()" id="btn_play">播放</button>
+                        <button style="width:64px;height:32px;font-size:medium;color:blue" onclick="toggleFullscreenState()" id="btn_fs">全屏</button>
+                        <button style="width:64px;height:32px;font-size:medium;color:gray" onclick="onButtonViewClick(1)" id="btn_v1">1x1</button>
+                        <button style="width:64px;height:32px;font-size:medium;color:gray" onclick="onButtonViewClick(2)" id="btn_v2">2x2</button>
+                        <button style="width:64px;height:32px;font-size:medium;color:gray" onclick="onButtonViewClick(3)" id="btn_v3">3x3</button>
+                        <button style="width:64px;height:32px;font-size:medium;color:gray" onclick="onButtonViewClick(4)" id="btn_v4">4x4</button>
+                    </DIV>
+                </DIV>
+            </DIV>
+        </DIV>
+    </DIV>
+</BODY>
+</HTML>

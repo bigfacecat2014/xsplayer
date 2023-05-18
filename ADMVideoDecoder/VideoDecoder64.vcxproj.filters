@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="DecodeManager.cpp" />
+    <ClCompile Include="Filtering.cpp" />
+    <ClCompile Include="LAVPixFmtConverter.cpp" />
+    <ClCompile Include="LAVVideo.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="VideoInputPin.cpp" />
+    <ClCompile Include="VideoOutputPin.cpp" />
+    <ClCompile Include="decoders\avcodec.cpp">
+      <Filter>decoders</Filter>
+    </ClCompile>
+    <ClCompile Include="decoders\pixfmt.cpp">
+      <Filter>decoders</Filter>
+    </ClCompile>
+    <ClCompile Include="parsers\HEVCSequenceParser.cpp">
+      <Filter>parsers</Filter>
+    </ClCompile>
+    <ClCompile Include="pixconv\pixconv.cpp">
+      <Filter>pixconv</Filter>
+    </ClCompile>
+    <ClCompile Include="pixconv\yuv2rgb.cpp">
+      <Filter>pixconv</Filter>
+    </ClCompile>
+    <ClCompile Include="Media.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DecodeManager.h" />
+    <ClInclude Include="ILAVVideo.h" />
+    <ClInclude Include="LAVPixFmtConverter.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="VideoInputPin.h" />
+    <ClInclude Include="VideoOutputPin.h" />
+    <ClInclude Include="decoders\avcodec.h">
+      <Filter>decoders</Filter>
+    </ClInclude>
+    <ClInclude Include="decoders\DecBase.h">
+      <Filter>decoders</Filter>
+    </ClInclude>
+    <ClInclude Include="LAVVideo.h" />
+    <ClInclude Include="decoders\LAVDecoder.h">
+      <Filter>decoders</Filter>
+    </ClInclude>
+    <ClInclude Include="parsers\HEVCSequenceParser.h">
+      <Filter>parsers</Filter>
+    </ClInclude>
+    <ClInclude Include="pixconv\pixconv_internal.h">
+      <Filter>pixconv</Filter>
+    </ClInclude>
+    <ClInclude Include="pixconv\pixconv_sse2_templates.h">
+      <Filter>pixconv</Filter>
+    </ClInclude>
+    <ClInclude Include="decoders\dxva2\dxva_common.h">
+      <Filter>decoders\dxva2</Filter>
+    </ClInclude>
+    <ClInclude Include="decoders\dxva2\DXVA2SurfaceAllocator.h">
+      <Filter>decoders\dxva2</Filter>
+    </ClInclude>
+    <ClInclude Include="decoders\d3d11\D3D11SurfaceAllocator.h" />
+    <ClInclude Include="decoders\d3d11\ID3DVideoMemoryConfiguration.h" />
+    <ClInclude Include="Media.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="decoders">
+      <UniqueIdentifier>{73ce16f8-a3cb-48a5-b042-4d4649ec3987}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="parsers">
+      <UniqueIdentifier>{bb47b889-8c0b-453f-8950-def30e376fbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pixconv">
+      <UniqueIdentifier>{1fcf1df6-ba0d-4d70-a239-3ead0f75a73b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="decoders\dxva2">
+      <UniqueIdentifier>{31514de2-4a0b-40b4-a612-c33f43db0322}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

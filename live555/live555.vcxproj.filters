@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="BasicUsageEnvironment">
+      <UniqueIdentifier>{fd4ae8ad-39be-42ae-a4be-ee68ebd5ec0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="groupsock">
+      <UniqueIdentifier>{1343f228-5027-4c42-9c06-2708b00b92dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="liveMedia">
+      <UniqueIdentifier>{7508fe2a-2851-41cd-9852-1d4cf1fde1d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UsageEnvironment">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="liveMedia\Source Files">
+      <UniqueIdentifier>{fb21f577-1d17-4aac-98cd-8eb6c5a785ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="liveMedia\Header Files">
+      <UniqueIdentifier>{ee0cc0f6-b808-414b-92a7-665b8ffcb50b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="liveMedia\Source Files\Misc">
+      <UniqueIdentifier>{3c8a8393-63ac-4e8f-b000-f1f080858d73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="liveMedia\Source Files\Video">
+      <UniqueIdentifier>{be21e3fa-b0e1-4f4f-bdaa-36c8e06f5853}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="liveMedia\Source Files\RTSP">
+      <UniqueIdentifier>{264c9c4f-39c7-4400-bea2-23576b441cc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="liveMedia\Header Files\Video">
+      <UniqueIdentifier>{db37873f-3128-4223-bc2d-41bf0cc97749}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="liveMedia\Header Files\Misc">
+      <UniqueIdentifier>{810e5ce0-00a0-4abc-a5d7-9b7d27f5c5da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="liveMedia\Header Files\RTSP">
+      <UniqueIdentifier>{c67b222b-a9d2-4101-81dd-425a47a77c77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="liveMedia\Header Files\RTP">
+      <UniqueIdentifier>{e827aea7-0f22-41f0-acea-6dbfb2853a5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="liveMedia\Header Files\RTCP">
+      <UniqueIdentifier>{97f8d619-3857-4316-bd19-ba0bbe37195c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="liveMedia\Source Files\RTP">
+      <UniqueIdentifier>{1a1cc356-34c5-468b-84e9-f2c622ce7f21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="liveMedia\Header Files\RTP\Audio">
+      <UniqueIdentifier>{6c03c734-3ad3-45dc-81a8-6d01ceae7e11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="liveMedia\Header Files\RTP\Video">
+      <UniqueIdentifier>{fa9e7c02-d12a-46ff-94d6-39d78da90b69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="liveMedia\Header Files\RTP\Common">
+      <UniqueIdentifier>{01de6dc0-fe5e-449a-b9b8-c55f4b8b1b59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BasicUsageEnvironment\Source Files">
+      <UniqueIdentifier>{7be214ee-bf05-44ac-a508-2219b2e4dbf4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BasicUsageEnvironment\Header Files">
+      <UniqueIdentifier>{7fe2db2d-f898-457b-b76c-582c92aef80c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="groupsock\Header Files">
+      <UniqueIdentifier>{e8ce081b-26e5-4222-9676-e7c601719929}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="groupsock\Source Files">
+      <UniqueIdentifier>{0511880f-6e9b-4d90-9c0c-7dc2fdd53f55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UsageEnvironment\Header Files">
+      <UniqueIdentifier>{859aafbf-f24f-42c1-8fc0-0fef033f8914}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UsageEnvironment\Source Files">
+      <UniqueIdentifier>{92e7fdc6-4fcc-4fe9-b4ec-20b05258a978}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="liveMedia\Source Files\Base">
+      <UniqueIdentifier>{5cfeb9fe-ebab-4a64-a0dd-4356c5c92f22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="liveMedia\Header Files\Base">
+      <UniqueIdentifier>{f5ddefb6-5f7e-494a-b649-d8f34ccf36dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="liveMedia\Source Files\RTP\Audio">
+      <UniqueIdentifier>{46749cdf-0ba2-446b-8698-40666dc0abc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="liveMedia\Source Files\RTP\Common">
+      <UniqueIdentifier>{dc5cf93e-3c53-4226-ade0-66d2fb769d8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="liveMedia\Source Files\RTP\Video">
+      <UniqueIdentifier>{7d6ba1e0-a793-4d80-a615-9db82b066d48}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="liveMedia\Base64.cpp">
+      <Filter>liveMedia\Source Files\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="liveMedia\BasicUDPSink.cpp">
+      <Filter>liveMedia\Source Files\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="liveMedia\BasicUDPSource.cpp">
+      <Filter>liveMedia\Source Files\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="liveMedia\BitVector.cpp">
+      <Filter>liveMedia\Source Files\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="liveMedia\DigestAuthentication.cpp">
+      <Filter>liveMedia\Source Files\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="liveMedia\FramedFilter.cpp">
+      <Filter>liveMedia\Source Files\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="liveMedia\FramedSource.cpp">
+      <Filter>liveMedia\Source Files\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="liveMedia\Locale.cpp">
+      <Filter>liveMedia\Source Files\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="liveMedia\RTSPClient.cpp">
+      <Filter>liveMedia\Source Files\RTSP</Filter>
+    </ClCompile>
+    <ClCompile Include="liveMedia\RTSPCommon.cpp">
+      <Filter>liveMedia\Source Files\RTSP</Filter>
+    </ClCompile>
+    <ClCompile Include="liveMedia\RTCP.cpp">
+      <Filter>liveMedia\Source Files\RTSP</Filter>
+    </ClCompile>
+    <ClCompile Include="liveMedia\rtcp_from_spec.c">
+      <Filter>liveMedia\Source Files\RTSP</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicUsageEnvironment\BasicHashTable.cpp">
+      <Filter>BasicUsageEnvironment\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicUsageEnvironment\BasicTaskScheduler.cpp">
+      <Filter>BasicUsageEnvironment\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicUsageEnvironment\BasicTaskScheduler0.cpp">
+      <Filter>BasicUsageEnvironment\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicUsageEnvironment\BasicUsageEnvironment.cpp">
+      <Filter>BasicUsageEnvironment\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicUsageEnvironment\BasicUsageEnvironment0.cpp">
+      <Filter>BasicUsageEnvironment\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicUsageEnvironment\DelayQueue.cpp">
+      <Filter>BasicUsageEnvironment\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="groupsock\GroupEId.cpp">
+      <Filter>groupsock\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="groupsock\Groupsock.cpp">
+      <Filter>groupsock\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="groupsock\GroupsockHelper.cpp">
+      <Filter>groupsock\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="groupsock\inet.c">
+      <Filter>groupsock\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="groupsock\IOHandlers.cpp">
+      <Filter>groupsock\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="groupsock\NetAddress.cpp">
+      <Filter>groupsock\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="groupsock\NetInterface.cpp">
+      <Filter>groupsock\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UsageEnvironment\UsageEnvironment.cpp">
+      <Filter>UsageEnvironment\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UsageEnvironment\HashTable.cpp">
+      <Filter>UsageEnvironment\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UsageEnvironment\strDup.cpp">
+      <Filter>UsageEnvironment\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="liveMedia\MediaSink.cpp">
+      <Filter>liveMedia\Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="liveMedia\Media.cpp">
+      <Filter>liveMedia\Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="liveMedia\MediaSource.cpp">
+      <Filter>liveMedia\Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="liveMedia\MediaSession.cpp">
+      <Filter>liveMedia\Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="liveMedia\MPEG4GenericRTPSource.cpp">
+      <Filter>liveMedia\Source Files\RTP\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="liveMedia\H265VideoRTPSource.cpp">
+      <Filter>liveMedia\Source Files\RTP\Video</Filter>
+    </ClCompile>
+    <ClCompile Include="liveMedia\RTPSource.cpp">
+      <Filter>liveMedia\Source Files\RTP\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="liveMedia\RTPInterface.cpp">
+      <Filter>liveMedia\Source Files\RTP\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="liveMedia\SimpleRTPSink.cpp">
+      <Filter>liveMedia\Source Files\RTP\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="liveMedia\SimpleRTPSource.cpp">
+      <Filter>liveMedia\Source Files\RTP\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="liveMedia\MultiFramedRTPSource.cpp">
+      <Filter>liveMedia\Source Files\RTP\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="liveMedia\StreamParser.cpp">
+      <Filter>liveMedia\Source Files\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="liveMedia\H264or5VideoStreamFramer.cpp">
+      <Filter>liveMedia\Source Files\Video</Filter>
+    </ClCompile>
+    <ClCompile Include="liveMedia\H265VideoStreamFramer.cpp">
+      <Filter>liveMedia\Source Files\Video</Filter>
+    </ClCompile>
+    <ClCompile Include="liveMedia\MPEGVideoStreamFramer.cpp">
+      <Filter>liveMedia\Source Files\Video</Filter>
+    </ClCompile>
+    <ClCompile Include="liveMedia\MPEGVideoStreamParser.cpp">
+      <Filter>liveMedia\Source Files\Video</Filter>
+    </ClCompile>
+    <ClCompile Include="liveMedia\ourMD5.cpp">
+      <Filter>liveMedia\Source Files\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="liveMedia\RTPSink.cpp">
+      <Filter>liveMedia\Source Files\RTP\Common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="liveMedia\include\Base64.hh">
+      <Filter>liveMedia\Header Files\Misc</Filter>
+    </None>
+    <None Include="liveMedia\include\BasicUDPSink.hh">
+      <Filter>liveMedia\Header Files\Misc</Filter>
+    </None>
+    <None Include="liveMedia\include\BasicUDPSource.hh">
+      <Filter>liveMedia\Header Files\Misc</Filter>
+    </None>
+    <None Include="liveMedia\include\BitVector.hh">
+      <Filter>liveMedia\Header Files\Misc</Filter>
+    </None>
+    <None Include="liveMedia\include\DigestAuthentication.hh">
+      <Filter>liveMedia\Header Files\Misc</Filter>
+    </None>
+    <None Include="liveMedia\include\FramedFilter.hh">
+      <Filter>liveMedia\Header Files\Misc</Filter>
+    </None>
+    <None Include="liveMedia\include\FramedSource.hh">
+      <Filter>liveMedia\Header Files\Misc</Filter>
+    </None>
+    <None Include="liveMedia\include\H264or5VideoStreamFramer.hh">
+      <Filter>liveMedia\Header Files\Video</Filter>
+    </None>
+    <None Include="liveMedia\include\H265VideoStreamFramer.hh">
+      <Filter>liveMedia\Header Files\Video</Filter>
+    </None>
+    <None Include="liveMedia\include\liveMedia.hh">
+      <Filter>liveMedia\Header Files\Misc</Filter>
+    </None>
+    <None Include="liveMedia\include\liveMedia_version.hh">
+      <Filter>liveMedia\Header Files\Misc</Filter>
+    </None>
+    <None Include="liveMedia\include\Locale.hh">
+      <Filter>liveMedia\Header Files\Misc</Filter>
+    </None>
+    <None Include="liveMedia\include\RTSPClient.hh">
+      <Filter>liveMedia\Header Files\RTSP</Filter>
+    </None>
+    <None Include="liveMedia\include\RTSPCommon.hh">
+      <Filter>liveMedia\Header Files\RTSP</Filter>
+    </None>
+    <None Include="liveMedia\include\RTCP.hh">
+      <Filter>liveMedia\Header Files\RTCP</Filter>
+    </None>
+    <None Include="liveMedia\include\MultiFramedRTPSource.hh">
+      <Filter>liveMedia\Header Files\RTP\Common</Filter>
+    </None>
+    <None Include="liveMedia\include\RTPInterface.hh">
+      <Filter>liveMedia\Header Files\RTP\Common</Filter>
+    </None>
+    <None Include="liveMedia\include\RTPSource.hh">
+      <Filter>liveMedia\Header Files\RTP\Common</Filter>
+    </None>
+    <None Include="liveMedia\include\SimpleRTPSource.hh">
+      <Filter>liveMedia\Header Files\RTP\Common</Filter>
+    </None>
+    <None Include="BasicUsageEnvironment\include\BasicHashTable.hh">
+      <Filter>BasicUsageEnvironment\Header Files</Filter>
+    </None>
+    <None Include="BasicUsageEnvironment\include\BasicUsageEnvironment.hh">
+      <Filter>BasicUsageEnvironment\Header Files</Filter>
+    </None>
+    <None Include="BasicUsageEnvironment\include\BasicUsageEnvironment_version.hh">
+      <Filter>BasicUsageEnvironment\Header Files</Filter>
+    </None>
+    <None Include="BasicUsageEnvironment\include\BasicUsageEnvironment0.hh">
+      <Filter>BasicUsageEnvironment\Header Files</Filter>
+    </None>
+    <None Include="BasicUsageEnvironment\include\DelayQueue.hh">
+      <Filter>BasicUsageEnvironment\Header Files</Filter>
+    </None>
+    <None Include="BasicUsageEnvironment\include\HandlerSet.hh">
+      <Filter>BasicUsageEnvironment\Header Files</Filter>
+    </None>
+    <None Include="groupsock\include\GroupEId.hh">
+      <Filter>groupsock\Header Files</Filter>
+    </None>
+    <None Include="groupsock\include\Groupsock.hh">
+      <Filter>groupsock\Header Files</Filter>
+    </None>
+    <None Include="groupsock\include\GroupsockHelper.hh">
+      <Filter>groupsock\Header Files</Filter>
+    </None>
+    <None Include="groupsock\include\groupsock_version.hh">
+      <Filter>groupsock\Header Files</Filter>
+    </None>
+    <None Include="groupsock\include\IOHandlers.hh">
+      <Filter>groupsock\Header Files</Filter>
+    </None>
+    <None Include="groupsock\include\NetAddress.hh">
+      <Filter>groupsock\Header Files</Filter>
+    </None>
+    <None Include="groupsock\include\NetInterface.hh">
+      <Filter>groupsock\Header Files</Filter>
+    </None>
+    <None Include="groupsock\include\TunnelEncaps.hh">
+      <Filter>groupsock\Header Files</Filter>
+    </None>
+    <None Include="UsageEnvironment\include\Boolean.hh">
+      <Filter>UsageEnvironment\Header Files</Filter>
+    </None>
+    <None Include="UsageEnvironment\include\HashTable.hh">
+      <Filter>UsageEnvironment\Header Files</Filter>
+    </None>
+    <None Include="UsageEnvironment\include\strDup.hh">
+      <Filter>UsageEnvironment\Header Files</Filter>
+    </None>
+    <None Include="UsageEnvironment\include\UsageEnvironment.hh">
+      <Filter>UsageEnvironment\Header Files</Filter>
+    </None>
+    <None Include="UsageEnvironment\include\UsageEnvironment_version.hh">
+      <Filter>UsageEnvironment\Header Files</Filter>
+    </None>
+    <None Include="liveMedia\include\MediaSink.hh">
+      <Filter>liveMedia\Header Files\Base</Filter>
+    </None>
+    <None Include="liveMedia\include\MediaSession.hh">
+      <Filter>liveMedia\Header Files\Base</Filter>
+    </None>
+    <None Include="liveMedia\include\Media.hh">
+      <Filter>liveMedia\Header Files\Base</Filter>
+    </None>
+    <None Include="liveMedia\include\MediaSource.hh">
+      <Filter>liveMedia\Header Files\Base</Filter>
+    </None>
+    <None Include="liveMedia\include\H265VideoRTPSource.hh">
+      <Filter>liveMedia\Header Files\RTP\Video</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="liveMedia\rtcp_from_spec.h">
+      <Filter>liveMedia\Header Files\RTCP</Filter>
+    </ClInclude>
+    <ClInclude Include="liveMedia\include\MPEG4GenericRTPSource.hh">
+      <Filter>liveMedia\Header Files\RTP\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="liveMedia\include\SimpleRTPSink.hh">
+      <Filter>liveMedia\Header Files\RTP\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="liveMedia\include\MultiFramedRTPSink.hh">
+      <Filter>liveMedia\Header Files\RTP\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="liveMedia\include\RTPSink.hh">
+      <Filter>liveMedia\Header Files\RTP\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="groupsock\include\NetCommon.h">
+      <Filter>groupsock\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="liveMedia\include\MPEGVideoStreamFramer.hh">
+      <Filter>liveMedia\Header Files\Video</Filter>
+    </ClInclude>
+    <ClInclude Include="liveMedia\MPEGVideoStreamParser.hh">
+      <Filter>liveMedia\Header Files\Video</Filter>
+    </ClInclude>
+    <ClInclude Include="liveMedia\StreamParser.hh">
+      <Filter>liveMedia\Header Files\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="liveMedia\ourMD5.hh">
+      <Filter>liveMedia\Header Files\Misc</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

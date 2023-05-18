@@ -1,3 +1,3 @@
 # xsplayer
-xs means Xianshi, the name of the author.
-xsplayer refined the concept of media player.
+xsplayer is a simple RTSP media source player for Windows.
+It also demostrates how to write a H.265 RTSP stream player ActiveX control for IE just for fun.

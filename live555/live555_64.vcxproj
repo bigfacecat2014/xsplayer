@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BasicUsageEnvironment\BasicHashTable.cpp" />
+    <ClCompile Include="BasicUsageEnvironment\BasicTaskScheduler.cpp" />
+    <ClCompile Include="BasicUsageEnvironment\BasicTaskScheduler0.cpp" />
+    <ClCompile Include="BasicUsageEnvironment\BasicUsageEnvironment.cpp" />
+    <ClCompile Include="BasicUsageEnvironment\BasicUsageEnvironment0.cpp" />
+    <ClCompile Include="BasicUsageEnvironment\DelayQueue.cpp" />
+    <ClCompile Include="groupsock\GroupEId.cpp" />
+    <ClCompile Include="groupsock\Groupsock.cpp" />
+    <ClCompile Include="groupsock\GroupsockHelper.cpp" />
+    <ClCompile Include="groupsock\inet.c" />
+    <ClCompile Include="groupsock\IOHandlers.cpp" />
+    <ClCompile Include="groupsock\NetAddress.cpp" />
+    <ClCompile Include="groupsock\NetInterface.cpp" />
+    <ClCompile Include="liveMedia\Base64.cpp" />
+    <ClCompile Include="liveMedia\BasicUDPSink.cpp" />
+    <ClCompile Include="liveMedia\BasicUDPSource.cpp" />
+    <ClCompile Include="liveMedia\BitVector.cpp" />
+    <ClCompile Include="liveMedia\DigestAuthentication.cpp" />
+    <ClCompile Include="liveMedia\FramedFilter.cpp" />
+    <ClCompile Include="liveMedia\FramedSource.cpp" />
+    <ClCompile Include="liveMedia\H264or5VideoStreamFramer.cpp" />
+    <ClCompile Include="liveMedia\H265VideoRTPSource.cpp" />
+    <ClCompile Include="liveMedia\H265VideoStreamFramer.cpp" />
+    <ClCompile Include="liveMedia\Locale.cpp" />
+    <ClCompile Include="liveMedia\Media.cpp" />
+    <ClCompile Include="liveMedia\MediaSession.cpp" />
+    <ClCompile Include="liveMedia\MediaSink.cpp" />
+    <ClCompile Include="liveMedia\MediaSource.cpp" />
+    <ClCompile Include="liveMedia\MPEG4GenericRTPSource.cpp" />
+    <ClCompile Include="liveMedia\MPEGVideoStreamFramer.cpp" />
+    <ClCompile Include="liveMedia\MPEGVideoStreamParser.cpp" />
+    <ClCompile Include="liveMedia\MultiFramedRTPSource.cpp" />
+    <ClCompile Include="liveMedia\ourMD5.cpp" />
+    <ClCompile Include="liveMedia\RTCP.cpp" />
+    <ClCompile Include="liveMedia\rtcp_from_spec.c" />
+    <ClCompile Include="liveMedia\RTPInterface.cpp" />
+    <ClCompile Include="liveMedia\RTPSink.cpp" />
+    <ClCompile Include="liveMedia\RTPSource.cpp" />
+    <ClCompile Include="liveMedia\RTSPClient.cpp" />
+    <ClCompile Include="liveMedia\RTSPCommon.cpp" />
+    <ClCompile Include="liveMedia\SimpleRTPSink.cpp" />
+    <ClCompile Include="liveMedia\SimpleRTPSource.cpp" />
+    <ClCompile Include="liveMedia\StreamParser.cpp" />
+    <ClCompile Include="UsageEnvironment\HashTable.cpp" />
+    <ClCompile Include="UsageEnvironment\strDup.cpp" />
+    <ClCompile Include="UsageEnvironment\UsageEnvironment.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BasicUsageEnvironment\include\BasicHashTable.hh" />
+    <None Include="BasicUsageEnvironment\include\BasicUsageEnvironment.hh" />
+    <None Include="BasicUsageEnvironment\include\BasicUsageEnvironment0.hh" />
+    <None Include="BasicUsageEnvironment\include\BasicUsageEnvironment_version.hh" />
+    <None Include="BasicUsageEnvironment\include\DelayQueue.hh" />
+    <None Include="BasicUsageEnvironment\include\HandlerSet.hh" />
+    <None Include="groupsock\include\GroupEId.hh" />
+    <None Include="groupsock\include\Groupsock.hh" />
+    <None Include="groupsock\include\GroupsockHelper.hh" />
+    <None Include="groupsock\include\groupsock_version.hh" />
+    <None Include="groupsock\include\IOHandlers.hh" />
+    <None Include="groupsock\include\NetAddress.hh" />
+    <None Include="groupsock\include\NetInterface.hh" />
+    <None Include="groupsock\include\TunnelEncaps.hh" />
+    <None Include="liveMedia\include\Base64.hh" />
+    <None Include="liveMedia\include\BasicUDPSink.hh" />
+    <None Include="liveMedia\include\BasicUDPSource.hh" />
+    <None Include="liveMedia\include\BitVector.hh" />
+    <None Include="liveMedia\include\DigestAuthentication.hh" />
+    <None Include="liveMedia\include\FramedFilter.hh" />
+    <None Include="liveMedia\include\FramedSource.hh" />
+    <None Include="liveMedia\include\H264or5VideoStreamFramer.hh" />
+    <None Include="liveMedia\include\H265VideoRTPSource.hh" />
+    <None Include="liveMedia\include\H265VideoStreamFramer.hh" />
+    <None Include="liveMedia\include\liveMedia.hh" />
+    <None Include="liveMedia\include\liveMedia_version.hh" />
+    <None Include="liveMedia\include\Locale.hh" />
+    <None Include="liveMedia\include\Media.hh" />
+    <None Include="liveMedia\include\MediaSession.hh" />
+    <None Include="liveMedia\include\MediaSink.hh" />
+    <None Include="liveMedia\include\MediaSource.hh" />
+    <None Include="liveMedia\include\MultiFramedRTPSource.hh" />
+    <None Include="liveMedia\include\RTCP.hh" />
+    <None Include="liveMedia\include\RTPInterface.hh" />
+    <None Include="liveMedia\include\RTPSource.hh" />
+    <None Include="liveMedia\include\RTSPClient.hh" />
+    <None Include="liveMedia\include\RTSPCommon.hh" />
+    <None Include="liveMedia\include\SimpleRTPSource.hh" />
+    <None Include="UsageEnvironment\include\Boolean.hh" />
+    <None Include="UsageEnvironment\include\HashTable.hh" />
+    <None Include="UsageEnvironment\include\strDup.hh" />
+    <None Include="UsageEnvironment\include\UsageEnvironment.hh" />
+    <None Include="UsageEnvironment\include\UsageEnvironment_version.hh" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="groupsock\include\NetCommon.h" />
+    <ClInclude Include="liveMedia\include\MPEG4GenericRTPSource.hh" />
+    <ClInclude Include="liveMedia\include\MPEGVideoStreamFramer.hh" />
+    <ClInclude Include="liveMedia\include\MultiFramedRTPSink.hh" />
+    <ClInclude Include="liveMedia\include\RTPSink.hh" />
+    <ClInclude Include="liveMedia\include\SimpleRTPSink.hh" />
+    <ClInclude Include="liveMedia\MPEGVideoStreamParser.hh" />
+    <ClInclude Include="liveMedia\ourMD5.hh" />
+    <ClInclude Include="liveMedia\rtcp_from_spec.h" />
+    <ClInclude Include="liveMedia\StreamParser.hh" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3BE86A9B-FF7A-4649-9FED-0F553B618A77}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>live555</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>live555</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINSOCK_DEPRECATED_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>UsageEnvironment/include;BasicUsageEnvironment/include;groupsock/include;liveMedia/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <SDLCheck>true</SDLCheck>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

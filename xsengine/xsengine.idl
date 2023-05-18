@@ -1,0 +1,51 @@
+// This file will be processed by the MIDL tool to
+// produce the type library (xsengine.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+#include <olectl.h>
+	
+
+	[
+		object,
+		uuid(88888888-1234-5678-9AAA-012301358886),
+		dual,
+		helpstring("IXSEngine Interface"),
+		pointer_default(unique)
+	]
+	interface IXSEngine : IDispatch
+	{
+		[id(1)] HRESULT post([in] BSTR reqStr, [out, retval] int* reqId);
+	};
+
+[
+	uuid(88888888-1234-5678-9AAB-012301358886),
+	version(1.0),
+	helpstring("xsengine 1.0 Type Library")
+]
+library XSEngineLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(88888888-1234-5678-9AAC-012301358886),
+		helpstring("_IXSEngineEvents Interface")
+	]
+	dispinterface _IXSEngineEvents
+	{
+		properties:
+		methods:
+		[id(1), helpstring("method onEvent")] void onEvent([in] int reqId, [in] BSTR rspStr);
+	};
+
+	[
+		uuid(88888888-1234-5678-9ABC-012301358886),
+		helpstring("XSEngine Control")
+	]
+	coclass XSEngine
+	{
+		[default] interface IXSEngine;
+		[default, source] dispinterface _IXSEngineEvents;
+	};
+};
