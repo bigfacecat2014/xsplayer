@@ -1,3 +1,15 @@
 # xsplayer
-xsplayer is a simple RTSP media source player for Windows.
-It demonstrates how to write a RTSP network media stream player ActiveX control for IE just for fun.
+xsplayer原本是想为虚拟现实打造的RTSP流媒体播放器，由于IE的衰落太快，WebRTC技术发展势头太猛，作者决定将此播放器捐献给开源社区，供擅长Windows多媒体技术栈的开发者研究点评之用。
+
+功能：
+1.xsplayer是一个基于Windows平台开发的RTSP媒体流播放器，仅支持H.265视频流，最大可同时播放16路HEVC实时视频流，可配合作者提供的live555项目测试体验，只需要将媒体文件（比如:test.mkv）存放在live555.exe的运行目录下即可。
+2.xsengine.dll被注册为IE可加载的ActiveX控件后，即可被IE中的Web前端程序调用。
+3.xsengine.dll可播放最大16路采用RTSP协议传输的H.265实时网络串流。
+4.xsengine.dll适用于Win7/Win8/Win8.1/Win10等桌面操作系统。
+
+构建说明：
+可用VS2019打开.sln文件，直接构建肯定会报错，因为缺少ffmpeg库和头文件。
+ffmpeg库需要你自己去构建一个，将构建的动态库放对应的输出目录下，并设置正确的ffmpeg包含文件目录。如果构建时遇到问题，可以尝试发邮件咨询作者：20775651@qq.com，作者看到后有条件会帮你解答。
+
+声明：
+这仅仅是一个学习多媒体技术的实践项目，其完成度没有达到商业应用要求，仅供参考学习研究之用，如果使用者将此项目的代码用于任何其它目的，作者将不承担任何责任。
