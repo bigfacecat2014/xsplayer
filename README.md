@@ -25,6 +25,7 @@ xsplayer是一个采用C++开发的用于虚拟现实应用场景的H.265流媒�
 这是一个学习多媒体技术的实践项目，其完成度没有达到商业应用要求，仅供使用者学习研究之用，如果使用者将此项目的代码用于任何其它目的，作者将不承担任何责任。
 
 ## 联系方式
- - 关注作者的知识星球-知识号：
- <img src=https://github.com/bigfacecat2014/xsplayer/blob/main/zsxq_github.png width=50% />
+ - 个人网站：codemi.net   
+ - 微信公众号：
+ <img src=https://github.com/bigfacecat2014/xsplayer/blob/main/adm_wx_gzh.png width=50% />
  
